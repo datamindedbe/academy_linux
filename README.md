@@ -29,8 +29,7 @@ The following exercises are part of the repository:
         * Final query is something like : `cat mlb_players.csv | awk -F,  '{if (($6 > 27) && ($0 ~ "Jose.*")) {print $1 $2 $6}}' | wc -l`
 
 * **Exercise 5 (`exercise_5`) - Redirection, pipes and commands (3)**: In this exercise, students are asked to:
-    * Use `jq` to query a specific heavily-nested JSON file.
-    * List all the stations in a specific route using Jq (TODO: JSON by NMBS from Oliver)
+    * Use `jq` to query a specific heavily-nested JSON file from the Github API
 
 * **Exercise 6 (`exercise_6`) - Permissions**: In this exercise, students are asked to:
     * Check the content of the `the_locked_file` file which is only accessible by root.
