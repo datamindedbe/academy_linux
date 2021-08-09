@@ -8,11 +8,11 @@ This repository is hosting the exercises provided to students in the context of 
 The following exercises are part of the repository:
 
 * **Exercise 1 (`exercise_1`) - Learn to move around**: In this exercise, students are asked to:
-    * Run the `messthisthingup.sh` script. The latter will customize the $PS1 variable to hide all the information of the terminal and bring students somewhere random in the system.
+    * Run the `source messthisthingup.sh` script. The latter will customize the $PS1 variable to hide all the information of the terminal and bring students somewhere random in the system.
     * Determine where they currently are.
-    * Say how many files are there. What are they?
+    * Say how many files are there. What are they? (`ls -1 | wc -l`)
     * Run `ls -la`. What are those information about?
-    * Find their way back to the folder where they ran the first script to run the `imback.sh` script.
+    * Find their way back to the folder where they ran the first script to run the `source imback.sh` script.
 
 * **Exercise 2 (`exercise_2`) - Files manipulation & globbing**: In this exercise, students are asked to:
     * Use the `tree` command to visualize the whole file structure.

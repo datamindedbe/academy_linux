@@ -11,19 +11,19 @@ RUN apt-get update && \
 
 # Install ttyd
 RUN mkdir /usr/bin/ttyd && \
-    apt-get install -y wget git tree ssh nano sudo nmap man tmux && \
+    apt-get install -y wget git tree ssh nano sudo nmap man tmux jq && \
     usermod -aG sudo trainee && \
     wget --directory-prefix=/usr/bin/ttyd https://github.com/tsl0922/ttyd/releases/download/1.6.0/ttyd_linux.x86_64 && \
     chmod +x /usr/bin/ttyd/ttyd_linux.x86_64
 
 # Copy exercices into the image
-COPY bash_exercices /home/trainee/bash_exercices
+COPY content /home/trainee/bash_exercices
 
 # Change folder permissions to allow people to modify it
 RUN chown -R trainee /home/trainee/bash_exercices && \
-    chmod -R 774 /home/trainee/bash_exercices && \
-    chown root:root /home/trainee/bash_exercices/files_permissions/the_locked_file.txt && \
-    chmod 000 /home/trainee/bash_exercices/files_permissions/the_locked_file.txt
+    chmod -R 774 /home/trainee/bash_exercices
+    # chown root:root /home/trainee/bash_exercices/files_permissions/the_locked_file.txt && \
+    # chmod 000 /home/trainee/bash_exercices/files_permissions/the_locked_file.txt
 
 # Change to non-root privilege
 USER trainee

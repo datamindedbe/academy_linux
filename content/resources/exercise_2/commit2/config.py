@@ -1,1 +1,0 @@
-API_VERSION_TO_USE="v2_nightly"
