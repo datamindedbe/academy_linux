@@ -16,7 +16,7 @@ The following exercises are part of the repository:
 
 * **Exercise 2 (`exercise_2`) - Files manipulation & globbing**: In this exercise, students are asked to:
     * Use the `tree` command to visualize the whole file structure.
-    * Separate the files that are in the `file_dump` folder (TODO: generate way more random files with a random generator) to respect the other folders patterns (using mv and globbing) 
+    * Separate the files that are in the `file_dump` folder to respect the other folders patterns (using mv and globbing) 
 
 * **Exercise 3 (`exercise_3`) - Redirection, pipes and commands (1)**: In this exercise, students are asked to:
     * Run the `ls –al /bin` which will return all the programs in the image binaries folder.
@@ -29,7 +29,7 @@ The following exercises are part of the repository:
         * Final query is something like : `cat mlb_players.csv | awk -F,  '{if (($6 > 27) && ($0 ~ "Jose.*")) {print $1 $2 $6}}' | wc -l`
 
 * **Exercise 5 (`exercise_5`) - Redirection, pipes and commands (3)**: In this exercise, students are asked to:
-    * Use `jq` to query a specific heavily-nested JSON file from the Github API
+    * Use `jq` to query a specific heavily-nested JSON file from the Github API and a Weather API.
 
 * **Exercise 6 (`exercise_6`) - Permissions**: In this exercise, students are asked to:
     * Check the content of the `the_locked_file` file which is only accessible by root.
@@ -39,7 +39,6 @@ The following exercises are part of the repository:
             * THE user should have read, write and execution permissions. 
             * Owning group should have read and execution only. 
             * Others should have read permission only.
-
 
 * **Exercise 7 (`exercise_7`) - Bash scriptingr**: In this exercise, students are asked to:
     * TBD
