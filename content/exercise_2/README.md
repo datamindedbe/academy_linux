@@ -1,13 +1,10 @@
-# Dataminded Academy - Introduction to Git
-## Exercise 2 - Logs & checkout
+# Dataminded Academy - Introduction to Linux & Bash
+## Exercise 1 - Files manipulation & globbing
 
-In this exercise you will have to use Git version control features. The tasks are the following:
+In this exercise you will have to use the Linux files manipulation commands (and globbing patterns). The tasks are the following:
 
-1. Open a terminal and position yourself in the root of this folder (`exercise_2`).
-2. Explore the history of the repository to find out how the content of three specific files change over time. To summarize your findings, fill-in the associated table below:
+1. Generate the exercise by running `./generate_exercise.sh`. This will create you two folders: landing_area and structured_area
+2. Sort the landing_area files inside the structured folders in structured_area in the least amount of commands possible. To do so, help yourself with globbing.
+3. Keep the commands you used in step 2 and put them all in a script that automate the processing of the landing_area. Try your script on a regenerated environment.
 
-|                                | Commit 1 (earliest) | Commit 2 | Commit 3 (latest) |
-|--------------------------------|---------------------|----------|-------------------|
-| client.py (TARGET)             |                     |          |                   |
-| config.py (API_VERSION_TO_USE) |                     |          |                   |
-| VERSION                        |                     |          |                   |
+If you need to restart your exercise, you can run the `./cleanup.sh` script followed by the `./generate_exercise.sh` script again.
