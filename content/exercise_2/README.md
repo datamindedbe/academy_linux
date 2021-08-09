@@ -1,5 +1,5 @@
 # Dataminded Academy - Introduction to Linux & Bash
-## Exercise 1 - Files manipulation & globbing
+## Exercise 2 - Files manipulation & globbing
 
 In this exercise you will have to use the Linux files manipulation commands (and globbing patterns). The tasks are the following:
 
