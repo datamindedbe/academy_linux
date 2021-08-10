@@ -22,5 +22,5 @@ The tasks are the following:
 1. Print the lines where the player's firstname is Jose
 2. From the result above, print the name (field 1), team (field 2) and age (field 6) of the players
 3. From the result above, keep only the players that are older than 27
-4. Export the result of the query to a separated file named results
+4. Export the result of the query to a separated file named 'results'
 5. Find out a way to count how many players are left

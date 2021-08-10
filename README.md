@@ -24,12 +24,17 @@ The following exercises are part of the repository:
     * Write the two results to the same file `output.log` by using redirection and concatenation operators
 
 * **Exercise 4 (`exercise_4`) - Redirection, pipes and commands (2)**: In this exercise, students are asked to:
-    * Use the awk command to process the content of a .csv file:
-        * Answer different questions that make student play with awk, piping (and Google :p)
-        * Final query is something like : `cat mlb_players.csv | awk -F,  '{if (($6 > 27) && ($0 ~ "Jose.*")) {print $1 $2 $6}}' | wc -l`
+    * Use the awk command to process the content of a .csv file and answer different questions that make student play with awk, piping (and Google :p)
+    * Answers are (or so): 
+        * `cat mlb_players.csv | awk -F,  '{if (($6 > 27) && ($0 ~ "Jose.*")) {print $1 $2 $6}}' | wc -l`
 
 * **Exercise 5 (`exercise_5`) - Redirection, pipes and commands (3)**: In this exercise, students are asked to:
     * Use `jq` to query a specific heavily-nested JSON file from the Github API and a Weather API.
+    * Answers are (or so):
+        * `curl 'https://api.github.com/repos/stedolan/jq/commits?per_page=20' | jq '.[].commit.tree.url'`
+        * `curl 'https://api.github.com/repos/stedolan/jq/commits?per_page=20' | jq '.[] | {commit_tree_url: .commit.tree.url, author_name: .commit.author.name, message: .commit.message, verified: .commit.verification.verified, parents: [.parents[].html_url]}' > commit_summary.json`
+        * `cat weather.json | jq '. | {latitude: .lat, longitude: .lon, current_weather_description: .current.weather[].description, hourly_temps: [.hourly[].temp]}'`
+        * `cat weather.json | jq '.hourly[].weather[].description' | sort | uniq -c | sort -rn | head -1`
 
 * **Exercise 6 (`exercise_6`) - Permissions**: In this exercise, students are asked to:
     * Check the content of the `the_locked_file` file which is only accessible by root.

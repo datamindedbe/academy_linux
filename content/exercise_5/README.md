@@ -39,7 +39,7 @@ The tasks are the following:
 
 1. Read attentively all the explanations above and test all the commands. Play a bit around.
 2. Display all the commit tree URLs for the last previous 20 commits
-3. Create a list of JSON objects that will, for every original commits, extract the information below and write the result to a file named commit_summary.json:
+3. Create a list of JSON objects that will, for every of the last 20 commits, extract the information below and write the result to a file named commit_summary.json:
 
 {
     commit_tree_url: ...,
@@ -59,7 +59,8 @@ The tasks are the following:
 {
     latitude: ...,
     longitude: ...,
-    first_daily_summary: ...,
-    hourly_visibilities: [visibility, ...],
-    nearest_station: ...,
+    current_weather_description: ...,
+    hourly_temps: [temp, temp, ...],
 }
+
+5. From the weather.json file (and using a combination of the jq, sort, uniq and head commands), figure out what is the most common description per day.
