@@ -27,6 +27,7 @@ The following exercises are part of the repository:
     * Use the awk command to process the content of a .csv file and answer different questions that make student play with awk, piping (and Google :p)
     * Answers are (or so): 
         * `cat mlb_players.csv | awk -F,  '{if (($6 > 27) && ($0 ~ "Jose.*")) {print $1 $2 $6}}' | wc -l`
+        * cat mlb_players.csv | awk -F,  '{if (($6 > 27) && ($0 ~ "Jose.*")) {print $1 $2 $6; sum+=$6; rows+=1}} END {print "Average age of players named Jose that are older than 27: " sum/rows}'
 
 * **Exercise 5 (`exercise_5`) - Redirection, pipes and commands (3)**: In this exercise, students are asked to:
     * Use `jq` to query a specific heavily-nested JSON file from the Github API and a Weather API.

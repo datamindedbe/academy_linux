@@ -11,16 +11,24 @@ cat <input file> | awk -F<field separator>  '<query>'
 
 For example:
 ```
-cat my_file.csv | awk -F,  '{if ($4>75) {print $4/2}}'  # if the 4th field is greater than 75, print it divided by 2
+cat mlb_players.csv | awk -F,  '{if ($4>75) {print $4/2}}'  # if the 4th field is greater than 75, print it divided by 2
 ---
-cat my_file.csv | awk -F,  '{if ($1 ~ "Scott.*") {print $0}}' # if the 1st field meet the regex inputed, print the whole line
+cat mlb_players.csv | awk -F,  '{if ($1 ~ "Scott.*") {print $0}}' # if the 1st field meet the regex inputed, print the whole line
 ```
+
+awk also allows the user to keep a state between each line processing by using multiple blocks like follows:
+```
+cat mlb_players.csv | awk -F,  '{if ($1 ~ "Scott.*") {count+=1}} END {print "The count of Jose is: " count}'
+```
+In the example above, the first block `{if ($1 ~ "Scott.*") {count+=1}}` is executed for every line of the file with the END block `{print "The count of Jose is: " count}` is, obvioulsy, only executed at the end of the processing. This allows you to make complex computations directly from the terminal.
 
 
 The tasks are the following:
 
-1. Print the lines where the player's firstname is Jose
-2. From the result above, print the name (field 1), team (field 2) and age (field 6) of the players
-3. From the result above, keep only the players that are older than 27
-4. Export the result of the query to a separated file named 'results'
-5. Find out a way to count how many players are left
+1. Read attentively all the explanations above and test all the commands. Play a bit around.
+2. Print the lines where the player's firstname is Jose
+3. From the result above, print the name (field 1), team (field 2) and age (field 6) of the players
+4. From the result above, keep only the players that are older than 27
+5. Export the result of the query to a separated file named 'results'
+6. Find out a way to count how many players are left
+7. From the result at 4, compute and display what is the average age of players (Jose older than 27)
