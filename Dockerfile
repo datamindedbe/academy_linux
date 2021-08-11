@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 # Install ttyd
 RUN mkdir /usr/bin/ttyd && \
-    apt-get install -y wget git tree ssh nano sudo nmap man tmux jq && \
+    apt-get install -y wget git tree ssh nano sudo nmap man tmux jq curl && \
     usermod -aG sudo trainee && \
     wget --directory-prefix=/usr/bin/ttyd https://github.com/tsl0922/ttyd/releases/download/1.6.0/ttyd_linux.x86_64 && \
     chmod +x /usr/bin/ttyd/ttyd_linux.x86_64
