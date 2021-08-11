@@ -1,11 +1,7 @@
-# Dataminded Academy - Introduction to Git
-## Exercise 6 - Stash and tags
+# Dataminded Academy - Introduction to Linux & Bash
+## Exercise 5 - The locked file
 
-In this exercise you will have to use the stash and tagging mechanisms. The tasks are the following:
+In this exercise you will have to figure out what's the problem with a locked file. The tasks are the following:
 
-1. Open a terminal and position yourself in the root of this folder (`exercise_6`).
-2. Stash two uncomited changes with explanation messages.
-3. List the existing stashes. You must be able to see your two stashes and the explanation messages
-4. Revert the two stash operations with two different commands.
-5. Tag the second-to-last commit of the repository with the tag of your choice.
-6. Checkout to it.
+1. Try to check the content of the `the_locked_file` file. What's the problem?
+2. Fix the issue with sensible parameters (Your account password is 'linux_bash' - ask your instructor for further details if needed)
