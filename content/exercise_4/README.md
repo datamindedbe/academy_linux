@@ -31,4 +31,4 @@ The tasks are the following:
 4. From the result above, keep only the players that are older than 27
 5. Export the result of the query to a separated file named 'results'
 6. Find out a way to count how many players are left
-7. From the result at 4, compute and display what is the average age of players (Jose older than 27)
+7. From the result at 4 and on top of the information already displayed, compute and display what is the average age of players (Jose's older than 27)

@@ -9,23 +9,34 @@ RUN useradd -m trainee -s /bin/bash && \
 RUN apt-get update && \
     apt-get upgrade --yes
 
-# Install ttyd
+# Install ttyd & dependencies
 RUN mkdir /usr/bin/ttyd && \
-    apt-get install -y wget git tree ssh nano sudo nmap man tmux jq curl && \
+    apt-get install -y wget git tree ssh nano sudo nmap man tmux jq curl uuid-runtime && \
     usermod -aG sudo trainee && \
     wget --directory-prefix=/usr/bin/ttyd https://github.com/tsl0922/ttyd/releases/download/1.6.0/ttyd_linux.x86_64 && \
     chmod +x /usr/bin/ttyd/ttyd_linux.x86_64
 
 # Copy exercices into the image
-COPY content /home/trainee/bash_exercices
+COPY content /home/trainee/
 
 # Change folder permissions to allow people to modify it
-RUN chown -R trainee /home/trainee/bash_exercices && \
-    chmod -R 774 /home/trainee/bash_exercices && \
-    chown root:root /home/trainee/bash_exercices/exercise_6/the_locked_file && \
-    chmod 000 /home/trainee/bash_exercices/exercise_6/the_locked_file && \
+# Set lock permissions for exercise 6
+# Copy solutions of exercises in hidden spots
+RUN chown -R trainee /home/trainee/ && \
+    chmod -R 774 /home/trainee/ && \
+    chown root:root /home/trainee/exercise_6/the_locked_file && \
+    chmod 000 /home/trainee/exercise_6/the_locked_file && \
     mkdir /bin/abstergo && \
-    mv /home/trainee/bash_exercices/exercise_7/solutions /bin/abstergo
+    mkdir /bin/glados && \
+    mkdir /bin/piper && \
+    mkdir /bin/blizzard && \
+    mkdir /bin/acme && \
+    mv /home/trainee/solutions/exercise_2 /bin/glados && \
+    mv /home/trainee/solutions/exercise_3 /bin/acme && \
+    mv /home/trainee/solutions/exercise_4 /bin/blizzard && \
+    mv /home/trainee/solutions/exercise_5 /bin/piper && \
+    mv /home/trainee/solutions/exercise_7 /bin/abstergo && \
+    rm -rf /home/trainee/solutions
 
 # Change to non-root privilege
 USER trainee
