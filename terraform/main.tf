@@ -18,8 +18,8 @@ resource "aws_instance" "academy_linux_lab" {
   }
 }
 
-output "instance_ip" {
-  description = "Lab VM public IP for SSH access"
+output "Public DNS" {
+  description = "Lab VM public DNS for SSH/Browser access"
   value       = aws_instance.academy_linux_lab.public_dns
 }
 
