@@ -1,2 +1,10 @@
 content/exercise_2/landing_area
 content/exercise_2/structured_area
+
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*

@@ -74,6 +74,8 @@ The following exercises are part of the repository:
 
 ### 2. How-to run 
 
+ssh ec2-user@34.251.239.128 
+
 First, you need to build the Docker image of the exercise environment (powered by TTYD) with:
 ```
 docker build -t linux-introduction-training:latest .
