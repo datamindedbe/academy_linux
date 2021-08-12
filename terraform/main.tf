@@ -7,23 +7,23 @@ provider "aws" {
   region  = "eu-west-1"
 }
 
-resource "aws_instance" "academy_git_linux_lab" {
+resource "aws_instance" "academy_linux_lab" {
   ami           = "ami-02b4e72b17337d6c1"
   instance_type = "t2.2xlarge"
   associate_public_ip_address = true
-  key_name = "AcademyGitLinuxSSHKey"
+  key_name = "AcademyLinuxSSHKey"
   security_groups = [ "AcademyLabVM" ]
   tags = {
-    "Name" = "academy_git_linux_lab"
+    "Name" = "academy_linux_lab"
   }
 }
 
 output "instance_ip" {
   description = "Lab VM public IP for SSH access"
-  value       = aws_instance.academy_git_linux_lab.public_ip
+  value       = aws_instance.academy_linux_lab.public_dns
 }
 
 resource "aws_key_pair" "ssh-key" {
-  key_name   = "AcademyGitLinuxSSHKey"
+  key_name   = "AcademyLinuxSSHKey"
   public_key = var.laptop-ssh-public-key
 }
