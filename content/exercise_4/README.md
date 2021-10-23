@@ -1,4 +1,4 @@
-# Dataminded Academy - Introduction to Linux & Bash
+# Data Minded Academy - Introduction to Linux & Bash
 ## Exercise 4 - Redirection, pipes and commands (2)
 
 In this exercise you will have to use the pipe operator in conjonction with the `awk` command to process data in a csv file. The mlb_players.csv file contains information about players from the US Major League of Baseball. Using the awk command, we are going to analyze the content of the file without spinning up a Jupyter notebook.

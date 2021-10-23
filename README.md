@@ -1,7 +1,9 @@
-# Dataminded Academy - Introduction to Linux & Bash
+# Data Minded Academy - Introduction to Linux & Bash
 ## Exercises Repository
 
-This repository is hosting the exercises provided to students in the context of the `Introduction to Linux & Bash` course of the Dataminded Academy.
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_git_exercises)
+
+This repository is hosting the exercises provided to students in the context of the `Introduction to Linux & Bash` course of the Data Minded Academy.
 
 ## 1. The exercises in details
 
@@ -74,6 +76,10 @@ The following exercises are part of the repository:
 
 ## 2. How-to run
 
+This exercise workshop can be run directly on Gitpod (without any need to provision VM or anything) or in a regular Cloud VM. The sections below explain how to run on a Cloud VM. For Gitpod run, you just need to click the button below.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_git_exercises)
+
 ### 2.1 Infrastructre
 
 The workshop Lab instance setup can be Terraformed in the current AWS account by running:
@@ -110,7 +116,8 @@ Once done, you can clean-up the stage with:
 ```
 
 ## 3. Notes
-* The login/password set to access the environment is linux_bash/linux_bash
+
+* The login/password set to access the ttyd environment is linux_bash/linux_bash
 * The user account password of this lab image is 'linux_bash'
 * All the exercises solutions are in `content/solutions` and are hidden in the Lab environment at the following paths:
 

@@ -1,4 +1,4 @@
-# Dataminded Academy - Introduction to Linux & Bash
+# Data Minded Academy - Introduction to Linux & Bash
 ## Exercise 1 - Navigation in the system
 
 In this exercise you will have to use the classic navigation commands. The tasks are the following:
