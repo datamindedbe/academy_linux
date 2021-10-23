@@ -1,4 +1,4 @@
-# Dataminded Academy - Introduction to Linux & Bash
+# Data Minded Academy - Introduction to Linux & Bash
 ## Exercise 5 - Redirection, pipes and commands (3)
 
 In this exercise you will have to use the curl and jq command to query and browse a JSON from the Github API. jq is a lightweight and flexible command-line JSON processor that allows you to process data from a JSON file. curl is a command that allows you to emit HTTP requests over the network.

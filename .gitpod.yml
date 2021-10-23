@@ -1,2 +1,8 @@
 image:
-  file: Dockerfile
+  file: .gitpod.Dockerfile
+checkoutLocation: '.'
+tasks:
+  - name: Clean root and grab useful exercises.
+    before: |
+      rm -rfv ./{*,.*}
+      mv /home/gitpod/linux-exercices/* .
