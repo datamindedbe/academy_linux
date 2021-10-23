@@ -1,7 +1,7 @@
 # Data Minded Academy - Introduction to Linux & Bash
 ## Exercises Repository
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_git_exercises)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_linux_exercises)
 
 This repository is hosting the exercises provided to students in the context of the `Introduction to Linux & Bash` course of the Data Minded Academy.
 
@@ -78,7 +78,7 @@ The following exercises are part of the repository:
 
 This exercise workshop can be run directly on Gitpod (without any need to provision VM or anything) or in a regular Cloud VM. The sections below explain how to run on a Cloud VM. For Gitpod run, you just need to click the button below.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_git_exercises)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_linux_exercises)
 
 ### 2.1 Infrastructre
 
