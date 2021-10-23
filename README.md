@@ -107,12 +107,12 @@ docker build -t linux-introduction-training:latest .
 
 Then, you can run a specific number of environments with the command below. The script will ask you at which port it must starts to spin-up the environments as well as how many environments should be created: 
 ```
-./spawn_the_envs.sh
+./scripts/sspawn_the_envs.sh
 ```
 
 Once done, you can clean-up the stage with:
 ```
-./kill_the_envs.sh
+./scripts/skill_the_envs.sh
 ```
 
 ## 3. Notes
