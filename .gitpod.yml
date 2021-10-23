@@ -5,4 +5,4 @@ tasks:
   - name: Clean root and grab useful exercises.
     before: |
       rm -rfv ./{*,.*}
-      sudo mv /home/gitpod/linux-exercices/* .
+      sudo mv /home/gitpod/linux-exercises/* .
