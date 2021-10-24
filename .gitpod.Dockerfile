@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 # This env var is used to force the 
 # rebuild of the Gitpod environment when needed
-ENV TRIGGER_REBUILD 0
+ENV TRIGGER_REBUILD 1
 
 USER root
 
