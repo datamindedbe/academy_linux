@@ -18,9 +18,9 @@ cat mlb_players.csv | awk -F,  '{if ($1 ~ "Scott.*") {print $0}}' # if the 1st f
 
 awk also allows the user to keep a state between each line processing by using multiple blocks like follows:
 ```
-cat mlb_players.csv | awk -F,  '{if ($1 ~ "Scott.*") {count+=1}} END {print "The count of Jose is: " count}'
+cat mlb_players.csv | awk -F,  '{if ($1 ~ "Scott.*") {count+=1}} END {print "The count of Scott is: " count}'
 ```
-In the example above, the first block `{if ($1 ~ "Scott.*") {count+=1}}` is executed for every line of the file with the END block `{print "The count of Jose is: " count}` is, obvioulsy, only executed at the end of the processing. This allows you to make complex computations directly from the terminal.
+In the example above, the first block `{if ($1 ~ "Scott.*") {count+=1}}` is executed for every line of the file with the END block `{print "The count of Scott is: " count}` is, obvioulsy, only executed at the end of the processing. This allows you to make complex computations directly from the terminal.
 
 
 The tasks are the following:
