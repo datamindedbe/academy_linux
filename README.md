@@ -1,7 +1,7 @@
 # Data Minded Academy - Introduction to Linux & Bash
 ## Exercises Repository
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_linux_exercises)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/datamindedbe/academy_linux)
 
 This repository is hosting the exercises provided to students in the context of the `Introduction to Linux & Bash` course of the Data Minded Academy.
 
