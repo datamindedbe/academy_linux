@@ -76,44 +76,10 @@ The following exercises are part of the repository:
 
 ## 2. How-to run
 
-This exercise workshop can be run directly on Gitpod (without any need to provision VM or anything) or in a regular Cloud VM. The sections below explain how to run on a Cloud VM. For Gitpod run, you just need to click the button below.
+This exercise workshop can be run directly on Gitpod. You just need to click the button below.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/dernat71/dataminded_linux_exercises)
 
-### 2.1 Infrastructre
-
-The workshop Lab instance setup can be Terraformed in the current AWS account by running:
-```
-cd terraform && terraform apply  
-```
-
-The user will be asked to input a public SSH key that can be used later to remotely connect to the instance using:
-```
-ssh -i ~/.ssh/<private-key-file>.pem ec2-user@<public-dns>
-```
-Note that the `<public-dns>` field will be outputed by the Terraform apply operation.
-
-You'll need to install Git and Docker into the EC2 instance:
-```
-sudo yum update -y && sudo yum install git docker -y && sudo service docker start
-```
-
-### 2.2 Run the Lab
-
-To run the lab (locally or from a VM), you need to build the Docker image of the exercise environment (powered by TTYD) with:
-```
-docker build -t linux-introduction-training:latest .
-```
-
-Then, you can run a specific number of environments with the command below. The script will ask you at which port it must starts to spin-up the environments as well as how many environments should be created: 
-```
-./scripts/sspawn_the_envs.sh
-```
-
-Once done, you can clean-up the stage with:
-```
-./scripts/skill_the_envs.sh
-```
 
 ## 3. Notes
 
